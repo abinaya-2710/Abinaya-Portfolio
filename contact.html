@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Abinaya S</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: white;
+      font-family: Arial, sans-serif;
+      color: #000;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    header {
+      background: #f8f8f8;
+      padding: 15px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav.container {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .logo span {
+      color: #0073e6;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #0073e6;
+    }
+
+    /* Contact Section */
+    .contact-container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 40px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .contact-container h2 {
+      text-align: center;
+      color: #0073e6;
+      margin-bottom: 20px;
+    }
+
+    .contact-container p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #0073e6;
+      outline: none;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    button {
+      background: #0073e6;
+      color: white;
+      padding: 12px;
+      border: none;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #00b3b3;
+    }
+
+    /* Social Links */
+    .social-links {
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      color: #0073e6;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #00b3b3;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+  <nav class="container">
+    <div class="logo">Portfolio<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Contact Section -->
+<section class="contact-container">
+  <h2>Contact Me</h2>
+  <p>Have a question or want to work together? Feel free to reach out!</p>
+  <form action="mailto:abinaya.yourmail@example.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="text" name="subject" placeholder="Subject" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <!-- Social Links -->
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/abinaya2310" target="_blank">LinkedIn</a>
+    <a href="https://github.com/Abi-2310" target="_blank">GitHub</a>
+    <a href="https://leetcode.com/u/Abi_2310" target="_blank">LeetCode</a>
+    <a href="https://abinaya-blog.example.com" target="_blank">Blog</a>
+  </div>
+</section>
+
+</body>
+</html>

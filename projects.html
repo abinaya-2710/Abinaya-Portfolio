@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Abinaya S</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: white;
+      color: #000;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    header {
+      background: #f8f8f8;
+      padding: 15px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav.container {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .logo span {
+      color: #0073e6;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #0073e6;
+    }
+
+    /* Projects Section */
+    .projects-container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .projects-container h2 {
+      color: #0073e6;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .project-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    }
+
+    .project-card h3 {
+      color: #0073e6;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      color: #333;
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    .tags {
+      margin-bottom: 15px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e6f4ff;
+      color: #0073e6;
+      padding: 6px 12px;
+      border-radius: 20px;
+      margin: 3px;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    .btn-link {
+      display: inline-block;
+      background: #0073e6;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-right: 10px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn-link:hover {
+      background: #00b3b3;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+  <nav class="container">
+    <div class="logo">Portfolio<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Projects Section -->
+<section class="projects-container">
+  <h2>Projects</h2>
+
+  <div class="project-card">
+    <h3>Job Recommendation System</h3>
+    <p>An AI-powered tool that matches user resumes with the most relevant job opportunities using Natural Language Processing and Machine Learning. Users can upload their resumes, view ranked job matches, and apply directly through the platform.</p>
+    <div class="tags">
+      <span class="tag">Streamlit</span>
+      <span class="tag">Pandas</span>
+      <span class="tag">Machine Learning</span>
+      <span class="tag">NLP</span>
+    </div>
+    <a href="https://github.com/Abi-2310/Job-Recommendation-System" target="_blank" class="btn-link">GitHub</a>
+  </div>
+
+  <div class="project-card">
+    <h3>Student Performance Dashboard</h3>
+    <p>Interactive dashboard that visualizes academic performance data, helping educators and students identify strengths and areas for improvement through clear charts and percentage breakdowns.</p>
+    <div class="tags">
+      <span class="tag">Streamlit</span>
+      <span class="tag">Pandas</span>
+      <span class="tag">Plotly</span>
+      <span class="tag">Data Visualization</span>
+    </div>
+    <a href="https://github.com/Abi-2310/Student-Performance-Dashboard" target="_blank" class="btn-link">GitHub</a>
+  </div>
+
+  <div class="project-card">
+    <h3>Anomaly Detection System for Login Activities</h3>
+    <p>A security-focused application that detects unusual login patterns in real-time, using ML algorithms to flag suspicious activity and display anomalies in an interactive dashboard for monitoring.</p>
+    <div class="tags">
+      <span class="tag">Streamlit</span>
+      <span class="tag">Pandas</span>
+      <span class="tag">Machine Learning</span>
+      <span class="tag">Cybersecurity</span>
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>
+
+

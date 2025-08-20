@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abinaya Portfolio - Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: white; /* White background */
+      color: #000;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    header {
+      background: #f8f8f8;
+      padding: 15px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav.container {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .logo span {
+      color: #0073e6;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #0073e6;
+    }
+
+    /* Hero Section */
+    .hero.container {
+      width: 90%;
+      margin: 40px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .hero-text h3 {
+      font-size: 22px;
+      color: #555;
+    }
+
+    .hero-text h1 {
+      font-size: 40px;
+      color: #000;
+    }
+
+    .hero-text h2 {
+      font-size: 26px;
+      margin: 10px 0;
+    }
+
+    .hero-text h2 span {
+      color: #0073e6;
+    }
+
+    .hero-text p {
+      max-width: 500px;
+      margin: 15px 0;
+      color: #444;
+    }
+
+    .social-icons a {
+      margin-right: 15px;
+      font-size: 20px;
+      color: #333;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #0073e6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #0073e6;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #005bb5;
+    }
+
+    /* Hero Image */
+    .hero-img img {
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+  <nav class="container">
+    <div class="logo">Portfolio<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero container">
+  <div class="hero-text">
+    <h3>Hello, It's Me</h3>
+    <h1>Abinaya S</h1>
+    <h2>And I'm a <span>Cloud & AI Enthusiast</span></h2>
+    <p>B.Tech AI & Data Science student passionate about building impactful solutions in AI, cloud, and software engineering.</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/abinayasenthilmururgan/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Abi-2310" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://leetcode.com/u/Abinaya_senthil23/" target="_blank"><i class="fa-solid fa-code"></i></a>
+      <a href="mailto:archanasenthil297@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+    <a href="Abinaya_Resume.pdf" class="btn" download>Download CV</a>
+  </div>
+  <div class="hero-img">
+    <img src="ABINAYA.jpg" alt="Abinaya S">
+  </div>
+</section>
+
+</body>
+</html>
+

@@ -3,141 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abinaya Portfolio - Home</title>
+  <title>Abinaya S — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    /* General Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      background-color: white; /* White background */
-      color: #000;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-    }
-
-    /* Navbar */
-    header {
-      background: #f8f8f8;
-      padding: 15px 0;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    nav.container {
-      width: 90%;
-      margin: auto;
+    .hero {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-    }
-
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-      color: #333;
-    }
-
-    .logo span {
-      color: #0073e6;
-    }
-
-    .nav-links {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    .nav-links a:hover,
-    .nav-links a.active {
-      color: #0073e6;
-    }
-
-    /* Hero Section */
-    .hero.container {
-      width: 90%;
-      margin: 40px auto;
-      display: flex;
       justify-content: space-between;
-      align-items: center;
-      gap: 30px;
+      gap: 40px;
+      padding: 70px 0 50px;
+      flex-wrap: wrap;
     }
 
-    .hero-text h3 {
-      font-size: 22px;
-      color: #555;
+    .hero-text { flex: 1; min-width: 280px; }
+
+    .hero-text .greeting {
+      font-size: 1.1rem;
+      color: #666;
+      margin-bottom: 6px;
     }
 
     .hero-text h1 {
-      font-size: 40px;
-      color: #000;
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 8px;
     }
 
     .hero-text h2 {
-      font-size: 26px;
-      margin: 10px 0;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: #444;
+      margin-bottom: 16px;
     }
 
-    .hero-text h2 span {
-      color: #0073e6;
-    }
+    .hero-text h2 span { color: #0073e6; }
 
     .hero-text p {
-      max-width: 500px;
-      margin: 15px 0;
-      color: #444;
+      color: #555;
+      max-width: 480px;
+      margin-bottom: 22px;
+      font-size: 1rem;
     }
 
+    .social-icons { margin-bottom: 20px; }
+
     .social-icons a {
-      margin-right: 15px;
-      font-size: 20px;
-      color: #333;
-      transition: color 0.3s;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border: 2px solid #0073e6;
+      border-radius: 50%;
+      color: #0073e6;
+      font-size: 1rem;
+      margin-right: 10px;
+      transition: all 0.3s;
+      text-decoration: none;
     }
 
     .social-icons a:hover {
+      background: #0073e6;
+      color: #fff;
+    }
+
+    .hero-img {
+      flex: 0 0 auto;
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-img img {
+      width: 280px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #0073e6;
+      box-shadow: 0 8px 30px rgba(0,115,230,0.2);
+    }
+
+    /* Stats bar */
+    .stats {
+      display: flex;
+      gap: 30px;
+      padding: 30px 0;
+      border-top: 1px solid #e5e7eb;
+      flex-wrap: wrap;
+    }
+
+    .stat-item { text-align: center; }
+
+    .stat-item .num {
+      font-size: 1.8rem;
+      font-weight: 700;
       color: #0073e6;
     }
 
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: #0073e6;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background 0.3s;
-    }
-
-    .btn:hover {
-      background: #005bb5;
-    }
-
-    /* Hero Image */
-    .hero-img img {
-      max-width: 300px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    .stat-item p {
+      font-size: 0.85rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
 
-<!-- Navbar -->
 <header>
   <nav class="container">
-    <div class="logo">Portfolio<span>.</span></div>
+    <div class="logo">Abinaya<span>.</span></div>
     <ul class="nav-links">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="about.html">About</a></li>
@@ -148,26 +122,46 @@
   </nav>
 </header>
 
-<!-- Hero Section -->
-<section class="hero container">
-  <div class="hero-text">
-    <h3>Hello, It's Me</h3>
-    <h1>Abinaya S</h1>
-    <h2>And I'm a <span>Cloud & AI Enthusiast</span></h2>
-    <p>B.Tech AI & Data Science student passionate about building impactful solutions in AI, cloud, and software engineering.</p>
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/abinayasenthilmururgan/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/Abi-2310" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://leetcode.com/u/Abinaya_senthil23/" target="_blank"><i class="fa-solid fa-code"></i></a>
-      <a href="mailto:archanasenthil297@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+<main class="container">
+  <section class="hero">
+    <div class="hero-text">
+      <p class="greeting">Hello, It's Me</p>
+      <h1>Abinaya S</h1>
+      <h2>Aspiring <span>Software Engineer</span> &amp; <span>Cloud &amp; AI Enthusiast</span></h2>
+      <p>B.Tech AI &amp; Data Science student at KPRIET, passionate about building impactful solutions in Artificial Intelligence, Cloud Computing, and Software Engineering.</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/abinayasenthilmururgan/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/Abi-2310" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://leetcode.com/u/Abinaya_senthil23/" target="_blank" title="LeetCode"><i class="fa-solid fa-code"></i></a>
+        <a href="https://www.hackerrank.com/" target="_blank" title="HackerRank"><i class="fab fa-hackerrank"></i></a>
+        <a href="mailto:archanasenthil297@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <a href="Abinaya_Resume.pdf" class="btn" download><i class="fa-solid fa-download" style="margin-right:6px"></i>Download CV</a>
     </div>
-    <a href="Abinaya_Resume.pdf" class="btn" download>Download CV</a>
+    <div class="hero-img">
+      <img src="ABINAYA.jpg" alt="Abinaya S">
+    </div>
+  </section>
+
+  <div class="stats">
+    <div class="stat-item">
+      <div class="num">8.69</div>
+      <p>CGPA</p>
+    </div>
+    <div class="stat-item">
+      <div class="num">3+</div>
+      <p>Projects</p>
+    </div>
+    <div class="stat-item">
+      <div class="num">2</div>
+      <p>Internships</p>
+    </div>
+    <div class="stat-item">
+      <div class="num">5+</div>
+      <p>Certifications</p>
+    </div>
   </div>
-  <div class="hero-img">
-    <img src="ABINAYA.jpg" alt="Abinaya S">
-  </div>
-</section>
+</main>
 
 </body>
 </html>
-

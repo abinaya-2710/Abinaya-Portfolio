@@ -3,122 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About — Abinaya S</title>
+  <title>About Me — Abinaya S</title>
+  <meta name="description" content="Learn about Abinaya S, her academic background in AI & Data Science at KPRIET (CGPA 8.77), Spotknack Cloud Computing experience, and certifications.">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    .page-content {
-      padding: 50px 0;
-    }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
-      margin-bottom: 30px;
-    }
-
-    @media (max-width: 700px) {
-      .about-grid { grid-template-columns: 1fr; }
-    }
-
-    .about-intro {
-      grid-column: 1 / -1;
-    }
-
-    .about-intro p {
-      font-size: 1.05rem;
-      color: #444;
-      line-height: 1.8;
-    }
-
-    .info-card h3 {
-      font-size: 1.1rem;
-      color: #0073e6;
-      margin-bottom: 14px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .edu-item, .exp-item {
-      margin-bottom: 18px;
-      padding-bottom: 18px;
-      border-bottom: 1px solid #f0f0f0;
-    }
-
-    .edu-item:last-child, .exp-item:last-child {
-      border-bottom: none;
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
-
-    .edu-item .degree {
-      font-weight: 700;
-      color: #111;
-    }
-
-    .edu-item .school {
-      color: #555;
-      font-size: 0.95rem;
-    }
-
-    .edu-item .meta {
-      font-size: 0.85rem;
-      color: #888;
-      margin-top: 2px;
-    }
-
-    .exp-item .role {
-      font-weight: 700;
-      color: #111;
-    }
-
-    .exp-item .company {
-      color: #0073e6;
-      font-size: 0.95rem;
-      font-weight: 600;
-    }
-
-    .exp-item p {
-      color: #555;
-      font-size: 0.93rem;
-      margin-top: 6px;
-      line-height: 1.6;
-    }
-
-    /* Certifications */
-    .cert-list {
-      list-style: none;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 14px;
-    }
-
-    .cert-list li {
-      background: #fff;
-      border-radius: 8px;
-      padding: 14px 16px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      font-size: 0.93rem;
-      color: #333;
-    }
-
-    .cert-list li i {
-      color: #0073e6;
-      margin-top: 2px;
-      flex-shrink: 0;
-    }
-  </style>
 </head>
 <body>
 
 <header>
-  <nav class="container">
-    <div class="logo">Abinaya<span>.</span></div>
+  <nav class="navbar container">
+    <a href="index.html" class="logo">Abinaya<span>.</span></a>
+    
+    <button class="mobile-toggle" aria-label="Toggle Navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html" class="active">About</a></li>
@@ -126,63 +25,179 @@
       <li><a href="projects.html">Projects</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+
+    <div class="nav-actions">
+      <a href="Abinaya_Resume.pdf" class="btn-nav-resume" target="_blank" download>
+        <i class="fa-solid fa-file-arrow-down"></i> Resume
+      </a>
+    </div>
   </nav>
 </header>
 
-<main class="container page-content">
-  <h2 class="section-title">About Me</h2>
+<main class="container" style="padding: 50px 0 80px;">
+  <div class="section-header">
+    <span class="section-tag">Background &amp; Profile</span>
+    <h1 class="section-title">About Me</h1>
+    <p class="section-subtitle">Dedicated to bridging Artificial Intelligence with scalable software engineering and cloud infrastructure.</p>
+  </div>
 
   <div class="about-grid">
-    <div class="about-intro card">
-      <p>
-        I'm <strong>Abinaya S</strong>, a B.Tech Artificial Intelligence &amp; Data Science student at
-        <strong>KPR Institute of Engineering and Technology</strong>, Coimbatore (2023–2027), maintaining a CGPA of <strong>8.69</strong>.
-        I'm passionate about building intelligent systems that solve real-world problems — from LLM-powered career tools to cloud-deployed web apps.
-        My interests span AI/ML, cloud computing, and full-stack development.
-      </p>
-    </div>
-
-    <!-- Education -->
-    <div class="card info-card">
-      <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
-      <div class="edu-item">
-        <div class="degree">B.Tech — Artificial Intelligence &amp; Data Science</div>
-        <div class="school">KPR Institute of Engineering and Technology, Coimbatore</div>
-        <div class="meta">2023 – 2027 &nbsp;|&nbsp; CGPA: 8.69</div>
+    <!-- Intro Card with Avatar -->
+    <div class="card about-intro-card">
+      <div class="about-avatar">
+        <img src="ABINAYA.jpg" alt="Abinaya S">
       </div>
-      <div class="edu-item">
-        <div class="degree">HSC — 92.16%</div>
-        <div class="school">Nirmala Matriculation Higher Secondary School, Chidambaram</div>
-        <div class="meta">2022 – 2023</div>
+      <div class="about-intro-text">
+        <h2 style="font-size: 1.5rem; margin-bottom: 8px;">Hi! I'm <span class="gradient-text">Abinaya S</span></h2>
+        <p>
+          I am an aspiring <strong>Software Engineer</strong> and passionate <strong>Cloud &amp; AI Enthusiast</strong> currently pursuing my B.Tech in <strong>Artificial Intelligence and Data Science</strong> at <strong>KPR Institute of Engineering and Technology, Coimbatore</strong> (2023–2027), where I maintain a strong academic record with a <strong>CGPA of 8.77</strong>.
+        </p>
+        <p>
+          My focus centers on architecting resilient, user-first applications powered by <strong>Large Language Models (LLMs)</strong>, <strong>Retrieval-Augmented Generation (RAG)</strong>, and <strong>AWS Cloud Computing</strong>. Through practical internships and real-world development projects, I have developed expertise in automated cloud deployments (Netlify, Vercel, Firebase), modern frontend engineering with React &amp; TypeScript, and backend microservices with Flask and SQL.
+        </p>
       </div>
     </div>
 
-    <!-- Experience -->
-    <div class="card info-card">
-      <h3><i class="fa-solid fa-briefcase"></i> Experience</h3>
-      <div class="exp-item">
-        <div class="company">Spotknack</div>
-        <div class="role">Cloud Computing Intern</div>
-        <p>Worked on real-world projects using Git &amp; GitHub, deployed applications via Netlify, Vercel, Firebase, and GitHub Pages. Designed UIs with Figma and gained practical exposure to networking fundamentals.</p>
+    <!-- Education Column -->
+    <div class="card">
+      <div class="info-card-header">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <h3>Education</h3>
       </div>
-      <div class="exp-item">
-        <div class="company">NoviTech R&amp;D Private Limited</div>
-        <div class="role">CyberSecurity Intern</div>
-        <p>Gained hands-on knowledge in network security, ethical hacking, and threat analysis. Explored firewall configuration and vulnerability assessment techniques.</p>
+
+      <div class="timeline-item">
+        <div class="timeline-role">B.Tech — Artificial Intelligence and Data Science</div>
+        <div class="timeline-org">KPR Institute of Engineering and Technology, Coimbatore</div>
+        <div class="timeline-meta">
+          <i class="fa-regular fa-calendar"></i> 2023 – 2027 &nbsp;|&nbsp; 
+          <i class="fa-solid fa-star" style="color: var(--warning);"></i> <strong>CGPA: 8.77</strong>
+        </div>
+        <p class="timeline-desc">
+          Core coursework covers Data Structures &amp; Algorithms, Machine Learning, Deep Learning, Database Management Systems, Cloud Computing, and Software Engineering. Active participant in coding challenges and AI project development.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-role">Higher Secondary Certificate (HSC)</div>
+        <div class="timeline-org">Nirmala Matriculation Higher Secondary School, Chidambaram</div>
+        <div class="timeline-meta">
+          <i class="fa-regular fa-calendar"></i> 2022 – 2023 &nbsp;|&nbsp; 
+          <i class="fa-solid fa-award" style="color: var(--primary);"></i> <strong>Score: 92.16%</strong>
+        </div>
+        <p class="timeline-desc">
+          Completed higher secondary education with academic distinction, building a solid foundation in Mathematics, Physics, Chemistry, and Computer Science.
+        </p>
+      </div>
+    </div>
+
+    <!-- Experience Column -->
+    <div class="card">
+      <div class="info-card-header">
+        <i class="fa-solid fa-briefcase"></i>
+        <h3>Work Experience</h3>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-role">Cloud Computing Intern</div>
+        <div class="timeline-org">Spotknack</div>
+        <div class="timeline-meta">
+          <i class="fa-regular fa-calendar"></i> Practical Internship
+        </div>
+        <div class="timeline-desc">
+          <ul>
+            <li>Worked on real-world development projects, utilizing Git and GitHub for version control, code management, and collaborative software engineering.</li>
+            <li>Applied cloud deployment concepts by deploying production applications using <strong>Netlify, Vercel, Firebase, and GitHub Pages</strong>.</li>
+            <li>Gained hands-on exposure to networking fundamentals, DNS, and modern software development workflows in an agile team environment.</li>
+            <li>Designed and refined user interfaces using <strong>Figma</strong>, gaining practical experience in UI/UX and collaborative design-to-code workflows.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-role">CyberSecurity Intern</div>
+        <div class="timeline-org">NoviTech R&amp;D Private Limited</div>
+        <div class="timeline-meta">
+          <i class="fa-regular fa-calendar"></i> Internship Training
+        </div>
+        <div class="timeline-desc">
+          <ul>
+            <li>Acquired practical knowledge of network security, ethical testing protocols, and vulnerability analysis.</li>
+            <li>Studied firewall configurations, authentication mechanisms, and secure coding practices for web applications.</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- Certifications -->
-  <h2 class="section-title" style="margin-top:20px">Certifications</h2>
-  <ul class="cert-list">
-    <li><i class="fa-solid fa-certificate"></i> Cloud Computing (AWS)</li>
-    <li><i class="fa-solid fa-certificate"></i> Data Analytics with Python — NPTEL</li>
-    <li><i class="fa-solid fa-certificate"></i> Statistical Learning for Reliability Analysis — NPTEL</li>
-    <li><i class="fa-solid fa-certificate"></i> LLM with RAG Model — NVIDIA</li>
-    <li><i class="fa-solid fa-certificate"></i> Generative AI Explained — NVIDIA</li>
-  </ul>
+  <!-- Certifications Section -->
+  <div style="margin-top: 40px;">
+    <div class="section-header" style="margin-bottom: 24px; text-align: left;">
+      <span class="section-tag">Verified Credentials</span>
+      <h2 class="section-title">Professional Certifications</h2>
+      <p class="section-subtitle">Continuous learning and skill verification from industry leaders including NVIDIA, NPTEL, and Spotknack.</p>
+    </div>
+
+    <div class="cert-grid">
+      <div class="card cert-card">
+        <div class="cert-icon"><i class="fa-brands fa-aws"></i></div>
+        <div class="cert-details">
+          <h4>Cloud Computing (AWS)</h4>
+          <div class="issuer">Spotknack</div>
+        </div>
+      </div>
+
+      <div class="card cert-card">
+        <div class="cert-icon" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);"><i class="fa-solid fa-microchip"></i></div>
+        <div class="cert-details">
+          <h4>LLM with RAG Model</h4>
+          <div class="issuer">NVIDIA Deep Learning Institute</div>
+        </div>
+      </div>
+
+      <div class="card cert-card">
+        <div class="cert-icon" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);"><i class="fa-solid fa-brain"></i></div>
+        <div class="cert-details">
+          <h4>Generative AI Explained</h4>
+          <div class="issuer">NVIDIA</div>
+        </div>
+      </div>
+
+      <div class="card cert-card">
+        <div class="cert-icon" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);"><i class="fa-brands fa-python"></i></div>
+        <div class="cert-details">
+          <h4>Data Analytics with Python</h4>
+          <div class="issuer">NPTEL / IIT</div>
+        </div>
+      </div>
+
+      <div class="card cert-card">
+        <div class="cert-icon" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);"><i class="fa-solid fa-chart-pie"></i></div>
+        <div class="cert-details">
+          <h4>Statistical Learning for Reliability Analysis</h4>
+          <div class="issuer">NPTEL / IIT</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
 
+<footer>
+  <div class="container footer-content">
+    <div class="logo">Abinaya<span>.</span></div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="Abinaya_Resume.pdf" target="_blank" download>Resume</a>
+    </div>
+    <div class="footer-copy">
+      &copy; <span id="current-year">2026</span> Abinaya S. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
 </body>
 </html>

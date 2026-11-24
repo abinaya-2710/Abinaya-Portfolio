@@ -4,54 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects — Abinaya S</title>
+  <meta name="description" content="Explore real-world software engineering and AI projects built by Abinaya S: AI Career Assistant, PlacePrep AI, and Job Recommendation System.">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    .page-content { padding: 50px 0; }
-
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 24px;
-    }
-
-    .project-card h3 {
-      font-size: 1.1rem;
-      color: #111;
-      margin-bottom: 10px;
-    }
-
-    .project-card p {
-      color: #555;
-      font-size: 0.93rem;
-      line-height: 1.7;
-      margin-bottom: 14px;
-    }
-
-    .project-card .tags { margin-bottom: 16px; }
-
-    .btn-sm {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 7px 16px;
-      background: #0073e6;
-      color: #fff;
-      border-radius: 6px;
-      text-decoration: none;
-      font-size: 0.88rem;
-      font-weight: 600;
-      transition: background 0.3s;
-    }
-
-    .btn-sm:hover { background: #005bb5; }
-  </style>
 </head>
 <body>
 
 <header>
-  <nav class="container">
-    <div class="logo">Abinaya<span>.</span></div>
+  <nav class="navbar container">
+    <a href="index.html" class="logo">Abinaya<span>.</span></a>
+    
+    <button class="mobile-toggle" aria-label="Toggle Navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
@@ -59,52 +25,205 @@
       <li><a href="projects.html" class="active">Projects</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+
+    <div class="nav-actions">
+      <a href="Abinaya_Resume.pdf" class="btn-nav-resume" target="_blank" download>
+        <i class="fa-solid fa-file-arrow-down"></i> Resume
+      </a>
+    </div>
   </nav>
 </header>
 
-<main class="container page-content">
-  <h2 class="section-title">Projects</h2>
+<main class="container" style="padding: 50px 0 80px;">
+  <div class="section-header">
+    <span class="section-tag">Portfolio Showcase</span>
+    <h1 class="section-title">Featured Projects</h1>
+    <p class="section-subtitle">Real-world AI systems, full-stack applications, and machine learning models with demonstrable production value.</p>
+  </div>
+
+  <!-- Interactive Filter Controls -->
+  <div class="projects-filter-bar">
+    <button class="filter-btn active" data-filter="all">All Projects</button>
+    <button class="filter-btn" data-filter="ai">AI &amp; LLMs</button>
+    <button class="filter-btn" data-filter="fullstack">Full-Stack &amp; Web</button>
+    <button class="filter-btn" data-filter="ml">Data &amp; Machine Learning</button>
+  </div>
 
   <div class="projects-grid">
-
-    <div class="card project-card">
-      <h3>Job Recommendation System</h3>
-      <p>Built a job recommendation system that analyzes resume content and matches it with relevant job roles using machine learning. Processed and compared resume data with job descriptions to rank suitable opportunities, delivered through an interactive Streamlit interface.</p>
-      <div class="tags">
-        <span class="tag">Streamlit</span>
-        <span class="tag">Pandas</span>
-        <span class="tag">Machine Learning</span>
+    <!-- Project 1: AI Career Assistant -->
+    <div class="card project-card" data-category="ai">
+      <div>
+        <div class="project-badge-row">
+          <span class="project-category"><i class="fa-solid fa-robot"></i> AI / Multi-Agent LLMs</span>
+          <span class="tag tag-accent">Featured Project</span>
+        </div>
+        <h3>AI Career Assistant — Multi-Agent LLM System</h3>
+        <p class="desc">
+          An advanced AI-powered career co-pilot that evaluates candidate resumes, calculates granular ATS scores, pinpoints skill gaps, and provides tailored improvement roadmaps.
+        </p>
+        <ul class="project-highlights">
+          <li><strong>Intelligent Parsing:</strong> Implemented Large Language Models and Retrieval-Augmented Generation (RAG) to deeply analyze resumes and offer accurate career recommendations.</li>
+          <li><strong>Multi-Agent Coordination:</strong> Integrated resume parsing, automated candidate analysis, real-time job matching, and AI-driven resume generation using Python, Streamlit, and Ollama.</li>
+          <li><strong>Personalized Feedback:</strong> Generates automated ATS scoring benchmarks with actionable step-by-step skill gap mitigation.</li>
+        </ul>
       </div>
-      <a href="https://github.com/abinaya-2710/Job-Recommendation-System" target="_blank" class="btn-sm"><i class="fab fa-github"></i> GitHub</a>
+      <div>
+        <div class="project-tech">
+          <span class="tag">Python</span>
+          <span class="tag">Streamlit</span>
+          <span class="tag">Ollama</span>
+          <span class="tag">RAG</span>
+          <span class="tag">NLP</span>
+          <span class="tag">LLMs</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Abi-2310" target="_blank" class="btn btn-primary btn-sm">
+            <i class="fab fa-github"></i> View Repository
+          </a>
+          <a href="https://github.com/Abi-2310" target="_blank" class="btn btn-secondary btn-sm">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+          </a>
+        </div>
+      </div>
     </div>
 
-    <div class="card project-card">
-      <h3>AI Career Assistant — Multi-Agent LLM System</h3>
-      <p>Developed an LLM-based system for resume parsing, ATS scoring, skill extraction, and resume improvement using NLP and prompt engineering. Implemented RAG and a modular multi-agent workflow to enable contextual analysis, voice-based interaction (TTS/STT), and real-time scalable deployment.</p>
-      <div class="tags">
-        <span class="tag">Streamlit</span>
-        <span class="tag">Python</span>
-        <span class="tag">Ollama</span>
-        <span class="tag">RAG</span>
-        <span class="tag">NLP</span>
+    <!-- Project 2: PlacePrep AI -->
+    <div class="card project-card" data-category="fullstack">
+      <div>
+        <div class="project-badge-row">
+          <span class="project-category"><i class="fa-solid fa-layer-group"></i> Full-Stack Platform</span>
+          <span class="tag">End-to-End System</span>
+        </div>
+        <h3>PlacePrep AI — Full-Stack Placement Platform</h3>
+        <p class="desc">
+          A full-stack placement readiness platform supporting live coding practice, automated aptitude assessments, mock interview preparations, and AI-driven curriculum recommendations.
+        </p>
+        <ul class="project-highlights">
+          <li><strong>Interactive Frontend:</strong> Developed the user interface with React and TypeScript, delivering a responsive dashboard for students to access prep modules and track performance metrics.</li>
+          <li><strong>Secure Backend:</strong> Built robust Flask-based REST APIs with SQL data persistence, role-based authorization, and JWT authentication.</li>
+          <li><strong>Comprehensive Toolkit:</strong> Integrates resume building, mock tests, and personalized AI-driven learning paths to maximize placement outcomes.</li>
+        </ul>
       </div>
-      <a href="https://github.com/abinaya-2710/AI-Career-Assistant" target="_blank" class="btn-sm"><i class="fab fa-github"></i> GitHub</a>
+      <div>
+        <div class="project-tech">
+          <span class="tag">React</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">Flask</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">JWT Auth</span>
+          <span class="tag">SQL</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Abi-2310" target="_blank" class="btn btn-primary btn-sm">
+            <i class="fab fa-github"></i> View Repository
+          </a>
+          <a href="https://github.com/Abi-2310" target="_blank" class="btn btn-secondary btn-sm">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+          </a>
+        </div>
+      </div>
     </div>
 
-    <div class="card project-card">
-      <h3>Online Exam Activity Monitoring System</h3>
-      <p>Developed a web-based system to monitor user activity during online examinations by capturing and logging user interactions. Implemented frontend event tracking and backend processing to identify suspicious behavior and display activity summaries on an admin dashboard.</p>
-      <div class="tags">
-        <span class="tag">Flask</span>
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">JavaScript</span>
+    <!-- Project 3: Job Recommendation System -->
+    <div class="card project-card" data-category="ml">
+      <div>
+        <div class="project-badge-row">
+          <span class="project-category"><i class="fa-solid fa-chart-line"></i> Machine Learning</span>
+          <span class="tag">NLP &amp; Embeddings</span>
+        </div>
+        <h3>Job Recommendation System</h3>
+        <p class="desc">
+          A machine learning-driven recommendation platform that processes unstructured resume data and matches candidate profiles to suitable job vacancies based on textual relevance.
+        </p>
+        <ul class="project-highlights">
+          <li><strong>Vector Space Matching:</strong> Applied TF-IDF vectorization to convert resume content and job specifications into high-dimensional feature spaces.</li>
+          <li><strong>Cosine Similarity Ranking:</strong> Calculated mathematical similarity scores to accurately prioritize and recommend top job openings.</li>
+          <li><strong>Streamlit Dashboard:</strong> Engineered a fast, interactive Streamlit frontend with Pandas data wrangling for real-time candidate queries.</li>
+        </ul>
       </div>
-      <a href="https://github.com/abinaya-2710/Screenshot_detection" target="_blank" class="btn-sm"><i class="fab fa-github"></i> GitHub</a>
+      <div>
+        <div class="project-tech">
+          <span class="tag">Python</span>
+          <span class="tag">Streamlit</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">TF-IDF</span>
+          <span class="tag">Cosine Similarity</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Abi-2310" target="_blank" class="btn btn-primary btn-sm">
+            <i class="fab fa-github"></i> View Repository
+          </a>
+          <a href="https://github.com/Abi-2310" target="_blank" class="btn btn-secondary btn-sm">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+          </a>
+        </div>
+      </div>
     </div>
 
+    <!-- Project 4: Online Exam Activity Monitoring -->
+    <div class="card project-card" data-category="fullstack">
+      <div>
+        <div class="project-badge-row">
+          <span class="project-category"><i class="fa-solid fa-shield-halved"></i> Proctoring &amp; Monitoring</span>
+          <span class="tag">Web App</span>
+        </div>
+        <h3>Online Exam Activity Monitoring System</h3>
+        <p class="desc">
+          A web-based monitoring platform designed to uphold examination integrity by logging candidate browser events, tab switches, and suspicious interactions in real time.
+        </p>
+        <ul class="project-highlights">
+          <li><strong>Activity Logging:</strong> Built client-side listeners in JavaScript to detect window blurring, focus shifts, keyboard shortcuts, and screenshot attempts.</li>
+          <li><strong>Admin Analytics:</strong> Created Flask backend handlers that aggregate exam event logs and flag anomalies on an interactive admin dashboard.</li>
+          <li><strong>Clean Architecture:</strong> Designed with vanilla JavaScript, Flask REST endpoints, and intuitive UI components for low-latency reporting.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="project-tech">
+          <span class="tag">Flask</span>
+          <span class="tag">Python</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Abi-2310" target="_blank" class="btn btn-primary btn-sm">
+            <i class="fab fa-github"></i> View Repository
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom CTA -->
+  <div class="card" style="margin-top: 50px; text-align: center; padding: 40px; background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%);">
+    <h3 style="font-size: 1.4rem; margin-bottom: 8px;">Explore More on GitHub</h3>
+    <p style="color: var(--text-muted); max-width: 550px; margin: 0 auto 20px;">
+      Check out additional open-source contributions, competitive programming solutions, and experimental machine learning models.
+    </p>
+    <a href="https://github.com/Abi-2310" target="_blank" class="btn btn-primary">
+      <i class="fab fa-github"></i> Visit GitHub Profile (@Abi-2310)
+    </a>
   </div>
 </main>
 
+<footer>
+  <div class="container footer-content">
+    <div class="logo">Abinaya<span>.</span></div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="Abinaya_Resume.pdf" target="_blank" download>Resume</a>
+    </div>
+    <div class="footer-copy">
+      &copy; <span id="current-year">2026</span> Abinaya S. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
 </body>
 </html>

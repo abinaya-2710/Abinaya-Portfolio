@@ -4,134 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact — Abinaya S</title>
+  <meta name="description" content="Get in touch with Abinaya S. Open to Software Engineering, Cloud Computing, and AI/ML opportunities. Reach out via email, phone, or LinkedIn.">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    .page-content { padding: 50px 0; }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1.4fr;
-      gap: 30px;
-      align-items: start;
-    }
-
-    @media (max-width: 700px) {
-      .contact-grid { grid-template-columns: 1fr; }
-    }
-
-    .contact-info h3 {
-      font-size: 1.1rem;
-      color: #0073e6;
-      margin-bottom: 20px;
-    }
-
-    .contact-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
-      margin-bottom: 20px;
-    }
-
-    .contact-item .icon {
-      width: 42px;
-      height: 42px;
-      background: #e6f0ff;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #0073e6;
-      font-size: 1rem;
-      flex-shrink: 0;
-    }
-
-    .contact-item .detail .label {
-      font-size: 0.8rem;
-      color: #888;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    .contact-item .detail a,
-    .contact-item .detail span {
-      display: block;
-      color: #222;
-      font-weight: 500;
-      text-decoration: none;
-      font-size: 0.95rem;
-    }
-
-    .contact-item .detail a:hover { color: #0073e6; }
-
-    .social-row { display: flex; gap: 12px; margin-top: 24px; }
-
-    .social-row a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 40px;
-      height: 40px;
-      border: 2px solid #0073e6;
-      border-radius: 50%;
-      color: #0073e6;
-      font-size: 1rem;
-      text-decoration: none;
-      transition: all 0.3s;
-    }
-
-    .social-row a:hover {
-      background: #0073e6;
-      color: #fff;
-    }
-
-    /* Form */
-    .contact-form h3 {
-      font-size: 1.1rem;
-      color: #0073e6;
-      margin-bottom: 20px;
-    }
-
-    form { display: flex; flex-direction: column; gap: 14px; }
-
-    input, textarea {
-      padding: 12px 14px;
-      border: 1.5px solid #dde3ec;
-      border-radius: 8px;
-      font-size: 0.95rem;
-      font-family: inherit;
-      transition: border 0.3s;
-      background: #fafbfc;
-    }
-
-    input:focus, textarea:focus {
-      border-color: #0073e6;
-      outline: none;
-      background: #fff;
-    }
-
-    textarea { min-height: 130px; resize: vertical; }
-
-    button[type="submit"] {
-      padding: 12px;
-      background: #0073e6;
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    button[type="submit"]:hover { background: #005bb5; }
-  </style>
 </head>
 <body>
 
 <header>
-  <nav class="container">
-    <div class="logo">Abinaya<span>.</span></div>
+  <nav class="navbar container">
+    <a href="index.html" class="logo">Abinaya<span>.</span></a>
+    
+    <button class="mobile-toggle" aria-label="Toggle Navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
@@ -139,64 +25,149 @@
       <li><a href="projects.html">Projects</a></li>
       <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
+
+    <div class="nav-actions">
+      <a href="Abinaya_Resume.pdf" class="btn-nav-resume" target="_blank" download>
+        <i class="fa-solid fa-file-arrow-down"></i> Resume
+      </a>
+    </div>
   </nav>
 </header>
 
-<main class="container page-content">
-  <h2 class="section-title">Contact Me</h2>
+<main class="container" style="padding: 50px 0 80px;">
+  <div class="section-header">
+    <span class="section-tag">Let's Connect</span>
+    <h1 class="section-title">Get In Touch</h1>
+    <p class="section-subtitle">Looking for an enthusiastic engineer to join your team or collaborate on an exciting project? Reach out anytime!</p>
+  </div>
 
   <div class="contact-grid">
+    <!-- Contact Information Details -->
+    <div>
+      <div class="card" style="margin-bottom: 24px;">
+        <h3 style="font-size: 1.25rem; margin-bottom: 8px;">Contact Information</h3>
+        <p style="color: var(--text-muted); font-size: 0.94rem; margin-bottom: 20px;">
+          Feel free to reach out directly via email, phone, or professional networks. I typically respond within 24 hours.
+        </p>
 
-    <!-- Contact Info -->
-    <div class="card contact-info">
-      <h3>Get In Touch</h3>
+        <div class="contact-info-list">
+          <div class="contact-box">
+            <div class="contact-box-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-box-text">
+              <span class="label">Email Address</span>
+              <a href="mailto:archanasenthil297@gmail.com" class="val">archanasenthil297@gmail.com</a>
+            </div>
+          </div>
 
-      <div class="contact-item">
-        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
-        <div class="detail">
-          <span class="label">Email</span>
-          <a href="mailto:archanasenthil297@gmail.com">archanasenthil297@gmail.com</a>
+          <div class="contact-box">
+            <div class="contact-box-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-box-text">
+              <span class="label">Phone / WhatsApp</span>
+              <a href="tel:+916385603574" class="val">+91 63856 03574</a>
+            </div>
+          </div>
+
+          <div class="contact-box">
+            <div class="contact-box-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-box-text">
+              <span class="label">Location</span>
+              <div class="val">Coimbatore, Tamil Nadu, India</div>
+            </div>
+          </div>
+
+          <div class="contact-box">
+            <div class="contact-box-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="contact-box-text">
+              <span class="label">Institution</span>
+              <div class="val">KPR Institute of Engineering &amp; Technology</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--border-light);">
+          <span class="label" style="display: block; font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700; margin-bottom: 12px;">Connect On Social Media</span>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/abinayasenthilmururgan/" target="_blank" class="social-btn" title="LinkedIn" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/Abi-2310" target="_blank" class="social-btn" title="GitHub" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://leetcode.com/u/Abinaya_senthil23/" target="_blank" class="social-btn" title="LeetCode" aria-label="LeetCode">
+              <i class="fa-solid fa-code"></i>
+            </a>
+            <a href="https://medium.com/@archanasenthil297" target="_blank" class="social-btn" title="Medium Blog" aria-label="Medium">
+              <i class="fab fa-medium"></i>
+            </a>
+          </div>
         </div>
       </div>
 
-      <div class="contact-item">
-        <div class="icon"><i class="fa-solid fa-phone"></i></div>
-        <div class="detail">
-          <span class="label">Phone</span>
-          <span>+91 63856 03574</span>
-        </div>
-      </div>
-
-      <div class="contact-item">
-        <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
-        <div class="detail">
-          <span class="label">Location</span>
-          <span>Coimbatore, Tamil Nadu, India</span>
-        </div>
-      </div>
-
-      <div class="social-row">
-        <a href="https://www.linkedin.com/in/abinayasenthilmururgan/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://github.com/Abi-2310" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://leetcode.com/u/Abinaya_senthil23/" target="_blank" title="LeetCode"><i class="fa-solid fa-code"></i></a>
-        <a href="https://www.hackerrank.com/" target="_blank" title="HackerRank"><i class="fab fa-hackerrank"></i></a>
+      <!-- Quick Resume Box -->
+      <div class="card" style="background: linear-gradient(135deg, #eff6ff 0%, #f5f3ff 100%); border-color: rgba(37, 99, 235, 0.2);">
+        <h4 style="font-size: 1.05rem; margin-bottom: 6px;"><i class="fa-solid fa-file-pdf" style="color: var(--primary); margin-right: 6px;"></i> Download Latest Resume</h4>
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 14px;">
+          Updated with B.Tech 8.77 CGPA, Spotknack Cloud internship, and current AI/LLM projects.
+        </p>
+        <a href="Abinaya_Resume.pdf" class="btn btn-primary btn-sm" target="_blank" download>
+          <i class="fa-solid fa-download"></i> Get Resume (PDF)
+        </a>
       </div>
     </div>
 
     <!-- Contact Form -->
-    <div class="card contact-form">
-      <h3>Send a Message</h3>
+    <div class="card">
+      <h3 style="font-size: 1.25rem; margin-bottom: 8px;">Send a Direct Message</h3>
+      <p style="color: var(--text-muted); font-size: 0.94rem; margin-bottom: 24px;">
+        Have an inquiry, role opening, or question? Fill in your details below.
+      </p>
+
       <form action="mailto:archanasenthil297@gmail.com" method="post" enctype="text/plain">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <input type="text" name="subject" placeholder="Subject" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit"><i class="fa-solid fa-paper-plane" style="margin-right:6px"></i>Send Message</button>
+        <div class="form-group">
+          <label for="contact-name">Your Full Name</label>
+          <input type="text" id="contact-name" name="name" class="form-control" placeholder="e.g. John Doe" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-email">Your Email Address</label>
+          <input type="email" id="contact-email" name="email" class="form-control" placeholder="e.g. john@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-subject">Subject</label>
+          <input type="text" id="contact-subject" name="subject" class="form-control" placeholder="e.g. Software Engineer Opportunity / Project Inquiry" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-message">Your Message</label>
+          <textarea id="contact-message" name="message" class="form-control" placeholder="Write your message here..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">
+          <i class="fa-solid fa-paper-plane"></i> Send Message
+        </button>
       </form>
     </div>
-
   </div>
 </main>
 
+<footer>
+  <div class="container footer-content">
+    <div class="logo">Abinaya<span>.</span></div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="Abinaya_Resume.pdf" target="_blank" download>Resume</a>
+    </div>
+    <div class="footer-copy">
+      &copy; <span id="current-year">2026</span> Abinaya S. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
 </body>
 </html>

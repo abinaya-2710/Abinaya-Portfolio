@@ -3,115 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abinaya S — Portfolio</title>
+  <title>Abinaya S — Aspiring Software Engineer | Cloud & AI Enthusiast</title>
+  <meta name="description" content="Portfolio of Abinaya S, B.Tech AI & Data Science student at KPRIET. Specializing in Software Engineering, Cloud Computing (AWS), and AI/LLM Multi-Agent Systems.">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    .hero {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 40px;
-      padding: 70px 0 50px;
-      flex-wrap: wrap;
-    }
-
-    .hero-text { flex: 1; min-width: 280px; }
-
-    .hero-text .greeting {
-      font-size: 1.1rem;
-      color: #666;
-      margin-bottom: 6px;
-    }
-
-    .hero-text h1 {
-      font-size: 2.8rem;
-      font-weight: 700;
-      color: #111;
-      margin-bottom: 8px;
-    }
-
-    .hero-text h2 {
-      font-size: 1.4rem;
-      font-weight: 500;
-      color: #444;
-      margin-bottom: 16px;
-    }
-
-    .hero-text h2 span { color: #0073e6; }
-
-    .hero-text p {
-      color: #555;
-      max-width: 480px;
-      margin-bottom: 22px;
-      font-size: 1rem;
-    }
-
-    .social-icons { margin-bottom: 20px; }
-
-    .social-icons a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 40px;
-      height: 40px;
-      border: 2px solid #0073e6;
-      border-radius: 50%;
-      color: #0073e6;
-      font-size: 1rem;
-      margin-right: 10px;
-      transition: all 0.3s;
-      text-decoration: none;
-    }
-
-    .social-icons a:hover {
-      background: #0073e6;
-      color: #fff;
-    }
-
-    .hero-img {
-      flex: 0 0 auto;
-      display: flex;
-      justify-content: center;
-    }
-
-    .hero-img img {
-      width: 280px;
-      height: 280px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 5px solid #0073e6;
-      box-shadow: 0 8px 30px rgba(0,115,230,0.2);
-    }
-
-    /* Stats bar */
-    .stats {
-      display: flex;
-      gap: 30px;
-      padding: 30px 0;
-      border-top: 1px solid #e5e7eb;
-      flex-wrap: wrap;
-    }
-
-    .stat-item { text-align: center; }
-
-    .stat-item .num {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: #0073e6;
-    }
-
-    .stat-item p {
-      font-size: 0.85rem;
-      color: #666;
-    }
-  </style>
 </head>
 <body>
 
 <header>
-  <nav class="container">
-    <div class="logo">Abinaya<span>.</span></div>
+  <nav class="navbar container">
+    <a href="index.html" class="logo">Abinaya<span>.</span></a>
+    
+    <button class="mobile-toggle" aria-label="Toggle Navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
     <ul class="nav-links">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="about.html">About</a></li>
@@ -119,49 +25,319 @@
       <li><a href="projects.html">Projects</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+
+    <div class="nav-actions">
+      <a href="Abinaya_Resume.pdf" class="btn-nav-resume" target="_blank" download>
+        <i class="fa-solid fa-file-arrow-down"></i> Resume
+      </a>
+    </div>
   </nav>
 </header>
 
 <main class="container">
+  <!-- Hero Section -->
   <section class="hero">
     <div class="hero-text">
-      <p class="greeting">Hello, It's Me</p>
-      <h1>Abinaya S</h1>
-      <h2>Aspiring <span>Software Engineer</span> &amp; <span>Cloud &amp; AI Enthusiast</span></h2>
-      <p>B.Tech AI &amp; Data Science student at KPRIET, passionate about building impactful solutions in Artificial Intelligence, Cloud Computing, and Software Engineering.</p>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/abinayasenthilmururgan/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://github.com/Abi-2310" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://leetcode.com/u/Abinaya_senthil23/" target="_blank" title="LeetCode"><i class="fa-solid fa-code"></i></a>
-        <a href="https://www.hackerrank.com/" target="_blank" title="HackerRank"><i class="fab fa-hackerrank"></i></a>
-        <a href="mailto:archanasenthil297@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+      <div class="status-badge">
+        <span class="status-dot"></span> Open to Software, Cloud &amp; AI Opportunities
       </div>
-      <a href="Abinaya_Resume.pdf" class="btn" download><i class="fa-solid fa-download" style="margin-right:6px"></i>Download CV</a>
+      <p class="greeting">Hello, I'm</p>
+      <h1>Abinaya S</h1>
+      <h2>Aspiring <span class="gradient-text">Software Engineer</span> &amp; <span class="gradient-text">Cloud &amp; AI Enthusiast</span></h2>
+      <p class="lead">
+        B.Tech in Artificial Intelligence &amp; Data Science at <strong>KPR Institute of Engineering and Technology</strong> (CGPA: <strong>8.77</strong>). Passionate about architecting multi-agent LLM systems, scalable cloud solutions, and full-stack intelligent applications.
+      </p>
+
+      <div class="hero-cta">
+        <a href="projects.html" class="btn btn-primary">
+          <i class="fa-solid fa-rocket"></i> View Projects
+        </a>
+        <a href="Abinaya_Resume.pdf" class="btn btn-secondary" target="_blank" download>
+          <i class="fa-solid fa-download"></i> Download Resume
+        </a>
+        <a href="contact.html" class="btn btn-secondary">
+          <i class="fa-solid fa-envelope"></i> Get In Touch
+        </a>
+      </div>
+
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/abinayasenthilmururgan/" target="_blank" class="social-btn" title="LinkedIn" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/Abi-2310" target="_blank" class="social-btn" title="GitHub" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://leetcode.com/u/Abinaya_senthil23/" target="_blank" class="social-btn" title="LeetCode" aria-label="LeetCode">
+          <i class="fa-solid fa-code"></i>
+        </a>
+        <a href="https://medium.com/@archanasenthil297" target="_blank" class="social-btn" title="Medium Blog" aria-label="Medium">
+          <i class="fab fa-medium"></i>
+        </a>
+        <a href="mailto:archanasenthil297@gmail.com" class="social-btn" title="Email" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
     </div>
-    <div class="hero-img">
-      <img src="ABINAYA.jpg" alt="Abinaya S">
+
+    <!-- Hero Visual / New Photo -->
+    <div class="hero-visual">
+      <div class="floating-pill pill-top">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <div class="pill-text">
+          <span class="pill-title">Academic Merit</span>
+          <span class="pill-value">8.77 CGPA</span>
+        </div>
+      </div>
+
+      <div class="hero-img-wrapper">
+        <div class="hero-img-inner">
+          <img src="ABINAYA.jpg" alt="Abinaya S — Software Engineer & Cloud & AI Enthusiast">
+        </div>
+      </div>
+
+      <div class="floating-pill pill-bottom">
+        <i class="fa-solid fa-brain"></i>
+        <div class="pill-text">
+          <span class="pill-title">Core Focus</span>
+          <span class="pill-value">AI, RAG &amp; Cloud</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <div class="stats">
-    <div class="stat-item">
-      <div class="num">8.69</div>
-      <p>CGPA</p>
+  <!-- Quick Metrics Banner -->
+  <section class="stats-banner">
+    <div class="stat-box">
+      <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+      <div class="stat-info">
+        <div class="stat-num">8.77</div>
+        <div class="stat-label">B.Tech CGPA (AI &amp; DS)</div>
+      </div>
     </div>
-    <div class="stat-item">
-      <div class="num">3+</div>
-      <p>Projects</p>
+
+    <div class="stat-box">
+      <div class="stat-icon"><i class="fa-solid fa-laptop-code"></i></div>
+      <div class="stat-info">
+        <div class="stat-num">3+</div>
+        <div class="stat-label">AI &amp; Full-Stack Projects</div>
+      </div>
     </div>
-    <div class="stat-item">
-      <div class="num">2</div>
-      <p>Internships</p>
+
+    <div class="stat-box">
+      <div class="stat-icon"><i class="fa-solid fa-certificate"></i></div>
+      <div class="stat-info">
+        <div class="stat-num">5+</div>
+        <div class="stat-label">Industry Certifications</div>
+      </div>
     </div>
-    <div class="stat-item">
-      <div class="num">5+</div>
-      <p>Certifications</p>
+
+    <div class="stat-box">
+      <div class="stat-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+      <div class="stat-info">
+        <div class="stat-num">Spotknack</div>
+        <div class="stat-label">Cloud Computing Intern</div>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <!-- Featured Domains / Highlights -->
+  <section style="margin-bottom: 70px;">
+    <div class="section-header">
+      <span class="section-tag">Areas of Expertise</span>
+      <h2 class="section-title">What I Bring to the Table</h2>
+      <p class="section-subtitle">Combining theoretical depth in Artificial Intelligence with hands-on software engineering and cloud deployment skills.</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+      <div class="card">
+        <div style="font-size: 2rem; color: var(--primary); margin-bottom: 16px;"><i class="fa-solid fa-brain"></i></div>
+        <h3 style="margin-bottom: 10px;">AI &amp; Multi-Agent LLMs</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">
+          Building end-to-end applications with Large Language Models, Retrieval-Augmented Generation (RAG), Ollama, and multi-agent coordination frameworks for intelligent resume parsing and job matching.
+        </p>
+        <div style="margin-top: 16px;">
+          <span class="tag">RAG</span>
+          <span class="tag">Ollama</span>
+          <span class="tag">NLP</span>
+          <span class="tag">Streamlit</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div style="font-size: 2rem; color: var(--primary); margin-bottom: 16px;"><i class="fa-solid fa-cloud"></i></div>
+        <h3 style="margin-bottom: 10px;">Cloud &amp; DevOps</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">
+          Hands-on experience deploying and hosting modern web applications using AWS (EC2, Lambda, S3), Netlify, Vercel, Firebase, and GitHub Pages with automated CI/CD workflows.
+        </p>
+        <div style="margin-top: 16px;">
+          <span class="tag">AWS (EC2, S3, Lambda)</span>
+          <span class="tag">Vercel</span>
+          <span class="tag">Git / GitHub</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div style="font-size: 2rem; color: var(--primary); margin-bottom: 16px;"><i class="fa-solid fa-code"></i></div>
+        <h3 style="margin-bottom: 10px;">Full-Stack Development</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">
+          Developing responsive, interactive user experiences with React, TypeScript, and modern CSS, backed by robust RESTful APIs built with Flask, SQL, and JWT authentication.
+        </p>
+        <div style="margin-top: 16px;">
+          <span class="tag">React</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">Flask</span>
+          <span class="tag">SQL</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Preview -->
+  <section style="margin-bottom: 80px;">
+    <div class="section-header">
+      <span class="section-tag">Featured Work</span>
+      <h2 class="section-title">Highlighted Projects</h2>
+      <p class="section-subtitle">Real-world AI systems and full-stack solutions built with modern technology stacks.</p>
+    </div>
+
+    <div class="projects-grid">
+      <!-- AI Career Assistant -->
+      <div class="card project-card">
+        <div>
+          <div class="project-badge-row">
+            <span class="project-category"><i class="fa-solid fa-robot"></i> AI / LLM Multi-Agent</span>
+            <span class="tag tag-accent">Featured</span>
+          </div>
+          <h3>AI Career Assistant — Multi-Agent LLM</h3>
+          <p class="desc">
+            An AI-powered career assistant that analyzes resumes, calculates ATS scores, identifies skill gaps, and generates tailored resume recommendations using multi-agent LLMs and RAG.
+          </p>
+          <ul class="project-highlights">
+            <li>Integrated resume parsing, automated candidate analysis &amp; job matching.</li>
+            <li>Implemented LLMs and Retrieval-Augmented Generation (RAG) for deep context.</li>
+            <li>Multi-agent workflow powered by Python, Streamlit, and Ollama.</li>
+          </ul>
+        </div>
+        <div>
+          <div class="project-tech">
+            <span class="tag">Python</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag">Ollama</span>
+            <span class="tag">RAG</span>
+            <span class="tag">NLP</span>
+          </div>
+          <div class="project-links">
+            <a href="projects.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-circle-info"></i> Project Details</a>
+            <a href="https://github.com/Abi-2310" target="_blank" class="btn btn-secondary btn-sm"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PlacePrep AI -->
+      <div class="card project-card">
+        <div>
+          <div class="project-badge-row">
+            <span class="project-category"><i class="fa-solid fa-layer-group"></i> Full-Stack Platform</span>
+            <span class="tag">Web App</span>
+          </div>
+          <h3>PlacePrep AI — Placement Platform</h3>
+          <p class="desc">
+            A comprehensive full-stack placement preparation platform supporting coding challenges, aptitude evaluations, interview prep, and AI-driven personalized learning tracks.
+          </p>
+          <ul class="project-highlights">
+            <li>Modern interactive frontend crafted in React and TypeScript.</li>
+            <li>Flask-based REST APIs with SQL backend and JWT security.</li>
+            <li>Role-based dashboards with automated student progress tracking.</li>
+          </ul>
+        </div>
+        <div>
+          <div class="project-tech">
+            <span class="tag">React</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Flask</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">SQL</span>
+            <span class="tag">JWT</span>
+          </div>
+          <div class="project-links">
+            <a href="projects.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-circle-info"></i> Project Details</a>
+            <a href="https://github.com/Abi-2310" target="_blank" class="btn btn-secondary btn-sm"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Job Recommendation System -->
+      <div class="card project-card">
+        <div>
+          <div class="project-badge-row">
+            <span class="project-category"><i class="fa-solid fa-chart-line"></i> Machine Learning</span>
+            <span class="tag">NLP &amp; Data</span>
+          </div>
+          <h3>Job Recommendation System</h3>
+          <p class="desc">
+            A machine-learning recommendation engine that extracts structured features from candidate resumes and matches them to suitable job descriptions with mathematical precision.
+          </p>
+          <ul class="project-highlights">
+            <li>Converts resume and job specifications into TF-IDF vector representations.</li>
+            <li>Computes Cosine Similarity scores for accurate candidate matching.</li>
+            <li>Streamlit interface with Pandas for high-speed data processing.</li>
+          </ul>
+        </div>
+        <div>
+          <div class="project-tech">
+            <span class="tag">Python</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">TF-IDF</span>
+            <span class="tag">Cosine Similarity</span>
+          </div>
+          <div class="project-links">
+            <a href="projects.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-circle-info"></i> Project Details</a>
+            <a href="https://github.com/Abi-2310" target="_blank" class="btn btn-secondary btn-sm"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="projects.html" class="btn btn-secondary">
+        View All Projects &amp; Live Demos <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- CTA Box -->
+  <section class="card" style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); color: #fff; padding: 48px; text-align: center; margin-bottom: 70px; border: none; box-shadow: var(--shadow-lg);">
+    <h2 style="color: #fff; font-size: 2rem; margin-bottom: 12px;">Interested in Collaborating?</h2>
+    <p style="color: #94a3b8; max-width: 600px; margin: 0 auto 28px; font-size: 1.05rem;">
+      Whether you're looking for an enthusiastic Software Engineer, Cloud Intern, or AI/ML Developer, I'd love to connect.
+    </p>
+    <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+      <a href="contact.html" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Send a Message</a>
+      <a href="mailto:archanasenthil297@gmail.com" class="btn btn-secondary" style="background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.2);">
+        <i class="fa-solid fa-envelope"></i> archanasenthil297@gmail.com
+      </a>
+    </div>
+  </section>
 </main>
 
+<footer>
+  <div class="container footer-content">
+    <div class="logo">Abinaya<span>.</span></div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="Abinaya_Resume.pdf" target="_blank" download>Resume</a>
+    </div>
+    <div class="footer-copy">
+      &copy; <span id="current-year">2026</span> Abinaya S. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
 </body>
 </html>
